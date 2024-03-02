@@ -1,9 +1,11 @@
 import React from 'react';
 
-const Tile: React.FC = () => {
+import { ITileProps } from '../types/interfaces';
+
+const Tile: React.FC<ITileProps> = ({ position, value }) => {
     return (
         <div>
-            This is the component representing a tile displaying the actual value
+            {value}
         </div>
     );
 }
